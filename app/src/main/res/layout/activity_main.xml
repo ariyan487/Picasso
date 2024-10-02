@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <ImageView
+       android:layout_width="match_parent"
+       android:layout_height="300dp"
+       android:id="@+id/img"
+       android:background="@color/black"
+       android:layout_centerVertical="true"
+       />
+
+   <LinearLayout
+       android:layout_below="@id/img"
+       android:layout_width="match_parent"
+       android:orientation="horizontal"
+       android:weightSum="2"
+       android:layout_height="wrap_content">
+
+
+
+   <Button
+       android:layout_weight="1"
+       android:id="@+id/btn"
+       android:layout_width="150dp"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/img"
+       android:layout_margin="10dp"
+       android:text="Back image"/>
+   <Button
+       android:layout_weight="1"
+       android:id="@+id/btn1"
+       android:layout_width="150dp"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/img"
+       android:layout_margin="10dp"
+       android:layout_toRightOf="@id/btn"
+       android:text="Next image"/>
+</LinearLayout>
+</RelativeLayout>
